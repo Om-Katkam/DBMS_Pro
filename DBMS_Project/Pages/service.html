@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="./style1.css">
+    <title>SERVICES FROM RADBOARDS</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 5px 50px;
+            border-top: 1px solid #bbb;
+        }
+
+        input {
+            width: 250px;
+            margin: 5px 0;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 0;
+        }
+
+        span {
+            padding: 10px 0 0;
+        }
+
+        #insert,
+        #reset {
+            width: 60px;
+            margin-right: 10px;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+
+<body background="bg.jpg"; style="padding: 10px 80px; width: 99%">
+    <br />
+    <h2 style="padding: 10px 100px; color:white;font-family:Arial, Helvetica, sans-serif;font-size: 50px">SERVICES</h2>
+
+    <form style="position:absolute; left:100px; width:90%" role="form" method="POST" action="Scripts/Service.php">
+
+        <input style="position:absolute; left:100px;top:20px; width:90%" type="number" name="cust_id" placeholder="customer id" />
+        <input style="position:absolute; left:100px;top:70px; width:90%" type="text" name="model_name" placeholder="Model Name" />
+        <input style="position:absolute; left:100px;top:120px; width:90%" type="text" name="color" placeholder="color" />
+        <input style="position:absolute; left:100px;top:170px; width:90%" type="text" name="issue" placeholder="description of the issue"/>
+        <!-- <input style="position:absolute; left:100px;top:220px; width:90%" type="number" name="cphno" placeholder="Customer phone no"/> -->
+        <!-- <input style="position:absolute; left:100px;top:270px; width:90%" type="text" name="caddress" placeholder="Customer address" /> -->
+            <input style="position:absolute; left:100px;top:220px; width:20%" type="submit" id="insert" value="Insert"  name="save"/>
+            <input style="position:absolute; left:500px;top:220px; width:20%" type="reset" id="reset" value="Clear" />
+
+    </form>

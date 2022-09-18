@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Tasks</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 5px 50px;
+            border-top: 1px solid #bbb;
+        }
+
+        input {
+            width: 250px;
+            margin: 5px 0;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 0;
+        }
+
+        span {
+            padding: 10px 0 0;
+        }
+
+        #insert,
+        #reset {
+            width: 60px;
+            margin-right: 10px;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+
+<body background="bg.jpg"; style="padding: 10px 80px; width: 99%">
+    <br />
+<h2 style="padding: 10px 100px; color:white;font-family:Arial, Helvetica, sans-serif;font-size: 50px">ENTER YOUR DAILY TASK</h2>
+    <form style="position:absolute; left:100px; width:90%" role="form" method="POST" action="Scripts/task.php">
+
+        <label  for="startTime">Select a start time :</label>
+        <input style="position:absolute; left:100px;top:20px; width:90%" type="time" id="startTime" name="start_time">
+        <label  for="startTime">Select a end time :</label>
+        <input style="position:absolute; left:100px;top:70px; width:90%" type="time" id="EndTime" name="end_time">
+        <input style="position:absolute; left:100px;top:120px; width:90%" type="text" name="Details" placeholder="Details" />
+        <label for="Enter date">Enter date:</label>
+        <input style="position:absolute; left:100px;top:170px; width:90%" type="date" id="Enter date" name="w_date">
+        <input style="position:absolute; left:100px;top:220px; width:90%" type="number" name="Hours" placeholder="workhours" />
+        <input style="position:absolute; left:100px;top:270px; width:90%" type="number" name="emp_id" placeholder="ID" />
+        <!-- <input style="position:absolute; left:100px;top:320px; width:90%" type="number" name="task_code" placeholder="code" /> -->
+
+
+        <span>
+            <input style="position:absolute; left:100px;top:370px; width:20%" type="submit" id="insert" value="Insert" name="save"/>
+            <input style="position:absolute; left:500px;top:370px; width:20%" type="reset" id="reset" value="Clear" />
+        </span>
+        </form>

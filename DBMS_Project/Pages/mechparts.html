@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Profile</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 5px 50px;
+            border-top: 1px solid #bbb;
+        }
+
+        input {
+            width: 250px;
+            margin: 5px 0;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 0;
+        }
+
+        span {
+            padding: 10px 0 0;
+        }
+
+        #insert,
+        #reset {
+            width: 60px;
+            margin-right: 10px;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+
+<body background="bg.jpg"; style="padding: 10px 80px; width: 99%">
+    <br />
+<h2 style="padding: 10px 100px; color:white;font-family:Arial, Helvetica, sans-serif;font-size: 50px">ENTER WHAT YOU WANT TO ORDER</h2>
+    <form style="position:absolute; left:100px; width:90%" role="form" method="POST" action="../Scripts/Manufacturer/mechparts.php">
+
+        <input style="position:absolute; left:100px;top:20px; width:90%" type="text" name="model_name" placeholder="model name" />
+        <input style="position:absolute; left:100px;top:70px; width:90%" type="number" name="emp_id" placeholder="employee id" />
+        <input style="position:absolute; left:100px;top:120px; width:90%" type="text" name="emp_name" placeholder="ordered by" />
+        <input style="position:absolute; left:100px;top:170px; width:90%" type="text" name="address" placeholder="Address" />
+        <input style="position:absolute; left:100px;top:220px; width:90%" type="text" name="specif" placeholder="specification" />
+
+
+
+        <span>
+            <input style="position:absolute; left:100px;top:370px; width:20%" type="submit" id="insert" value="Insert" />
+            <input style="position:absolute; left:500px;top:370px; width:20%" type="reset" id="reset" value="Clear" />
+        </span>
+    </form>
